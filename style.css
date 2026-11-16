@@ -372,12 +372,6 @@ h2 {
     padding-top: 25px;
 }
 
-.observacao {
-    color: var(--cinza);
-    font-size: .8rem;
-    margin-top: 18px;
-}
-
 .tags {
     display: flex;
     flex-wrap: wrap;
