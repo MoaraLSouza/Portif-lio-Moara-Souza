@@ -1,307 +1,326 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfólio de Moara Lima Souza, estudante de Engenharia de Software com interesse em cibersegurança." />
-    <title>Moara Lima Souza | Portfólio</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Moara Lima Souza, estudante de Engenharia de Software com interesse em desenvolvimento e cibersegurança." />
+  <meta name="theme-color" content="#dcdcd4" />
+  <title>Moara Lima Souza | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-            <symbol id="gato1" viewBox="0 0 64 64">
-                <path d="M10 30 L12 8 L28 18 Q32 17 36 18 L52 8 L54 30 Q56 51 32 52 Q8 51 10 30 Z" fill="#cbc5ff" stroke="#1c1b1a" stroke-width="3" stroke-linejoin="round"/>
-                <circle cx="22" cy="32" r="3" fill="#1c1b1a"/>
-                <circle cx="42" cy="32" r="3" fill="#1c1b1a"/>
-                <path d="M29 38 h6 l-3 3.5 z" fill="#1c1b1a" stroke="#1c1b1a" stroke-width="1.5" stroke-linejoin="round"/>
-                <path d="M32 41.5 q-3 4 -6 2 M32 41.5 q3 4 6 2" fill="none" stroke="#1c1b1a" stroke-width="2" stroke-linecap="round"/>
-                <path d="M6 36 l12 2 M6 44 l12 -3 M58 36 l-12 2 M58 44 l-12 -3" stroke="#1c1b1a" stroke-width="2" stroke-linecap="round"/>
-            </symbol>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="gato1" viewBox="0 0 64 64">
+      <path d="M10 30 12 8 28 18q4-1 8 0L52 8l2 22q2 21-22 22Q8 51 10 30Z" fill="#cbc5ff" stroke="#1c1b1a" stroke-width="3" stroke-linejoin="round" />
+      <circle cx="22" cy="32" r="3" fill="#1c1b1a" />
+      <circle cx="42" cy="32" r="3" fill="#1c1b1a" />
+      <path d="M29 38h6l-3 3.5Z" fill="#1c1b1a" />
+      <path d="M32 41.5q-3 4-6 2m6-2q3 4 6 2M6 36l12 2M6 44l12-3m40-5-12 2m12 6-12-3" fill="none" stroke="#1c1b1a" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="gato2" viewBox="0 0 64 64">
+      <path d="M10 30 12 8 28 18q4-1 8 0L52 8l2 22q2 21-22 22Q8 51 10 30Z" fill="#fff" stroke="#1c1b1a" stroke-width="3" />
+      <path d="M26 14v6m6-7v7m6-6v6M16 34q5-6 10 0m12 0q5-6 10 0" fill="none" stroke="#201461" stroke-width="3" stroke-linecap="round" />
+      <ellipse cx="17" cy="41" rx="4" ry="2.5" fill="#cbc5ff" />
+      <ellipse cx="47" cy="41" rx="4" ry="2.5" fill="#cbc5ff" />
+      <path d="M28 40q4 6 8 0Z" fill="#201461" stroke="#1c1b1a" stroke-width="2" />
+    </symbol>
+    <symbol id="pata" viewBox="0 0 64 64">
+      <g fill="#201461">
+        <ellipse cx="32" cy="43" rx="14" ry="11" />
+        <ellipse cx="13" cy="31" rx="5" ry="7" transform="rotate(-20 13 31)" />
+        <ellipse cx="24" cy="18" rx="5" ry="7.5" />
+        <ellipse cx="40" cy="18" rx="5" ry="7.5" />
+        <ellipse cx="51" cy="31" rx="5" ry="7" transform="rotate(20 51 31)" />
+      </g>
+    </symbol>
+    <symbol id="brilho" viewBox="0 0 64 64">
+      <path d="M30 8q3 21 24 24-21 3-24 24Q27 35 6 32 27 29 30 8Z" fill="#1c1b1a" />
+      <path d="M51 6q1 7 8 8-7 1-8 8-1-7-8-8 7-1 8-8Z" fill="#201461" />
+    </symbol>
+    <symbol id="coracao" viewBox="0 0 64 64">
+      <path d="M32 54C6 37 10 12 32 24 54 12 58 37 32 54Z" fill="#201461" stroke="#1c1b1a" stroke-width="3" />
+      <path d="M18 24q2-5 7-4" fill="none" stroke="#cbc5ff" stroke-width="3" stroke-linecap="round" />
+    </symbol>
+    <symbol id="espiral" viewBox="0 0 64 64">
+      <path d="M32 32a2 2 0 1 1 4 0 4 4 0 1 1-8 0 6 6 0 1 1 12 0 8 8 0 1 1-16 0 10 10 0 1 1 20 0 12 12 0 1 1-24 0 14 14 0 1 1 28 0" fill="none" stroke="#201461" stroke-width="3" stroke-linecap="round" />
+    </symbol>
+  </svg>
 
-            <symbol id="gato2" viewBox="0 0 64 64">
-                <path d="M10 30 L12 8 L28 18 Q32 17 36 18 L52 8 L54 30 Q56 51 32 52 Q8 51 10 30 Z" fill="#ffffff" stroke="#1c1b1a" stroke-width="3" stroke-linejoin="round"/>
-                <path d="M26 14 v6 M32 13 v7 M38 14 v6" stroke="#201461" stroke-width="3" stroke-linecap="round"/>
-                <path d="M16 34 q5 -6 10 0 M38 34 q5 -6 10 0" fill="none" stroke="#1c1b1a" stroke-width="3" stroke-linecap="round"/>
-                <ellipse cx="17" cy="41" rx="4" ry="2.5" fill="#cbc5ff"/>
-                <ellipse cx="47" cy="41" rx="4" ry="2.5" fill="#cbc5ff"/>
-                <path d="M28 40 q4 6 8 0 z" fill="#201461" stroke="#1c1b1a" stroke-width="2" stroke-linejoin="round"/>
-            </symbol>
+  <header class="topo" id="topo">
+    <div class="topo-interno">
+      <a class="logo" href="#inicio" aria-label="Portfólio, início">
+        Portfólio<span>.</span>
+      </a>
 
-            <symbol id="pata" viewBox="0 0 64 64">
-                <g fill="#201461">
-                    <ellipse cx="32" cy="43" rx="14" ry="11"/>
-                    <ellipse cx="13" cy="31" rx="5" ry="7" transform="rotate(-20 13 31)"/>
-                    <ellipse cx="24" cy="18" rx="5" ry="7.5" transform="rotate(-8 24 18)"/>
-                    <ellipse cx="40" cy="18" rx="5" ry="7.5" transform="rotate(8 40 18)"/>
-                    <ellipse cx="51" cy="31" rx="5" ry="7" transform="rotate(20 51 31)"/>
-                </g>
-            </symbol>
+      <div class="controles-topo">
+        <button id="btn-tema" class="btn-tema" type="button" aria-label="Alternar modo escuro" title="Mudar tema">
+          <span id="icone-tema">🌙</span>
+        </button>
 
-            <symbol id="espiral" viewBox="0 0 64 64">
-                <path transform="translate(-9 -5.5) scale(1.2)" d="M32 32 a2 2 0 0 1 4 0 a4 4 0 0 1 -8 0 a6 6 0 0 1 12 0 a8 8 0 0 1 -16 0 a10 10 0 0 1 20 0 a12 12 0 0 1 -24 0 a14 14 0 0 1 28 0" fill="none" stroke="#201461" stroke-width="3" stroke-linecap="round"/>
-            </symbol>
+        <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
-            <symbol id="brilho" viewBox="0 0 64 64">
-                <path d="M30 8 Q33 29 54 32 Q33 35 30 56 Q27 35 6 32 Q27 29 30 8 Z" fill="#1c1b1a"/>
-                <path d="M51 6 Q52 13 59 14 Q52 15 51 22 Q50 15 43 14 Q50 13 51 6 Z" fill="#201461"/>
-            </symbol>
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-            <symbol id="coracao" viewBox="0 0 64 64">
-                <path d="M32 54 C6 37 10 12 32 24 C54 12 58 37 32 54 Z" fill="#201461" stroke="#1c1b1a" stroke-width="3" stroke-linejoin="round"/>
-                <path d="M18 24 q2 -5 7 -4" fill="none" stroke="#cbc5ff" stroke-width="3" stroke-linecap="round"/>
-            </symbol>
-        </defs>
-    </svg>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <svg class="adesivo hero-brilho" aria-hidden="true"><use href="#brilho" /></svg>
+      <svg class="adesivo hero-espiral esconde-mobile" aria-hidden="true"><use href="#espiral" /></svg>
 
-    <header class="topo" id="topo">
-        <div class="topo-interno">
-            <a class="logo" href="#inicio">Portfólio<span>.</span></a>
-
-            <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
-
-            <nav id="menu" aria-label="Navegação principal">
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#habilidades">Habilidades</a>
-                <a class="nav-cta" href="#contato">Contato</a>
-            </nav>
+      <div class="hero-texto">
+        <p class="etiqueta">ESTUDANTE DE ENGENHARIA DE SOFTWARE</p>
+        <h1 id="titulo-principal">Olá, eu sou<br /><span>Moara Lima.</span></h1>
+        <p class="resumo">Construindo minha jornada na tecnologia, com interesse em desenvolvimento de software e cibersegurança.</p>
+        <div class="acoes">
+          <a class="botao" href="#projetos">Conheça meus projetos</a>
+          <a class="link-simples" href="#contato">Entre em contato ↗</a>
         </div>
-    </header>
+      </div>
 
-    <main>
-        <section class="hero" id="inicio">
-            <svg class="adesivo" style="--t:56px; --r:10deg; top:24px; left:52%;" aria-hidden="true"><use href="#brilho"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:66px; --r:15deg; bottom:22px; left:30%;" aria-hidden="true"><use href="#espiral"/></svg>
+      <div class="foto-area">
+        <img src="foto-perfil.jpg" alt="Foto de Moara Lima Souza" onerror="this.classList.add('imagem-indisponivel')" />
+        <svg class="adesivo gato-foto" aria-hidden="true"><use href="#gato2" /></svg>
+        <span class="selo">echo<br />"Hello, World!"</span>
+      </div>
+    </section>
 
-            <div class="hero-texto">
-                <p class="etiqueta">ESTUDANTE DE ENGENHARIA DE SOFTWARE</p>
+    <section class="sobre secao" id="sobre" aria-labelledby="titulo-sobre">
+      <svg class="adesivo sobre-brilho esconde-mobile" aria-hidden="true"><use href="#brilho" /></svg>
+      <svg class="adesivo sobre-gato" aria-hidden="true"><use href="#gato1" /></svg>
+      <svg class="adesivo sobre-pata esconde-mobile" aria-hidden="true"><use href="#pata" /></svg>
 
-                <h1>
-                    Olá, eu sou<br />
-                    <span>Moara Lima.</span>
-                </h1>
+      <div class="sobre-lateral">
+        <p class="numero">01 / SOBRE MIM</p>
+        <figure class="foto-sobre">
+          <img src="foto-sobre.webp" alt="Ilustração que representa Moara" onerror="this.parentElement.classList.add('sem-imagem')" />
+        </figure>
+      </div>
 
-                <p class="resumo">
-                    Construindo minha jornada na tecnologia, com interesse em
-                    desenvolvimento de software e cibersegurança.
-                </p>
+      <div class="sobre-texto">
+        <h2 id="titulo-sobre">Aprendendo, criando<br />e evoluindo.</h2>
+        <p>Sou estudante de Engenharia de Software e estou desenvolvendo minha base em programação, desenvolvimento web e segurança da informação. Tenho curiosidade em entender como os sistemas funcionam — e como torná-los mais seguros.</p>
+      </div>
+    </section>
 
-                <div class="acoes">
-                    <a class="botao" href="#projetos">Conheça meus projetos</a>
-                    <a class="link-simples" href="#contato">Entre em contato ↗</a>
-                </div>
+    <section class="secao projetos-secao" id="projetos" aria-labelledby="titulo-projetos">
+      <svg class="adesivo projetos-coracao esconde-mobile" aria-hidden="true"><use href="#coracao" /></svg>
+      <svg class="adesivo projetos-pata" aria-hidden="true"><use href="#pata" /></svg>
+
+      <div class="cabecalho-secao">
+        <p class="numero">02 / PROJETOS</p>
+        <h2 id="titulo-projetos">O que estou<br />construindo<span>.</span></h2>
+        <p class="subtitulo-secao">Projetos acadêmicos e pessoais que fazem parte da minha evolução na tecnologia.</p>
+      </div>
+
+      <div class="filtro-projetos" aria-label="Filtros de projetos">
+        <div class="filtro-botoes" id="filtro-botoes">
+          <button class="filtro-btn ativo" type="button" data-filtro="Todos" aria-pressed="true">Todos</button>
+        </div>
+        <p id="contador-projetos" class="contador-projetos" aria-live="polite">3 projetos encontrados</p>
+      </div>
+
+      <div class="projetos" id="lista-projetos" aria-live="polite" aria-busy="false"></div>
+
+      <p class="sem-resultados" id="sem-resultados" hidden>
+        Nenhum projeto encontrado nessa categoria. Experimente selecionar “Todos”.
+      </p>
+
+      <section class="gerenciador" id="gerenciador" aria-labelledby="titulo-gerenciador" hidden>
+        <div class="gerenciador-cabecalho">
+          <div>
+            <p class="numero">ÁREA DE GERENCIAMENTO</p>
+            <h3 id="titulo-gerenciador">Gerencie seus projetos</h3>
+            <p>Adicione, edite ou remova cards sem precisar alterar os arquivos do site.</p>
+          </div>
+          <div class="gerenciador-acoes">
+            <button class="botao-secundario" id="sair-admin" type="button">Sair do modo administrador</button>
+            <span class="gerenciador-icone" aria-hidden="true">＋</span>
+          </div>
+        </div>
+
+        <form id="form-projeto" class="form-projeto" novalidate>
+          <input type="hidden" id="projeto-id" />
+
+          <div class="form-projeto-grade">
+            <div class="field">
+              <label for="projeto-titulo">Nome do projeto *</label>
+              <input id="projeto-titulo" name="titulo" type="text" minlength="2" maxlength="70" required placeholder="Ex.: Meu primeiro site" />
+              <small class="erro-msg" id="erro-projeto-titulo"></small>
             </div>
 
-            <div class="foto-area">
-                
-                <img src="foto-perfil.jpg" alt="Foto de Moara">
-                <svg class="adesivo" style="--t:88px; --r:-14deg; top:-38px; left:-34px; z-index:2;" aria-hidden="true"><use href="#gato2"/></svg>
-                <span class="selo">
-                    echo <br>
-                    "Hello, World!" <br/>
-                </span>
-            </div>
-        </section>
-
-        <section class="sobre secao" id="sobre">
-            <svg class="adesivo esconde-mobile" style="--t:48px; --r:-15deg; top:22px; left:4%;" aria-hidden="true"><use href="#brilho"/></svg>
-            <svg class="adesivo" style="--t:96px; --r:6deg; bottom:8px; right:12%;" aria-hidden="true"><use href="#gato1"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:52px; --r:22deg; bottom:70px; left:6%;" aria-hidden="true"><use href="#pata"/></svg>
-
-            <div class="sobre-lateral">
-                <p class="numero">01 / SOBRE MIM</p>
-
-                <figure class="foto-sobre">
-                    <!-- AQUI ESTÁ A SEGUNDA FOTO (ILUSTRAÇÃO DA SEÇÃO SOBRE) -->
-                    <img src="foto-sobre.webp" alt="Ilustração sobre Moara">
-                </figure>
+            <div class="field">
+              <label for="projeto-categoria">Categoria / tecnologia principal *</label>
+              <input id="projeto-categoria" name="categoria" type="text" maxlength="35" required placeholder="Ex.: Java, Front-End, Python" />
+              <small class="erro-msg" id="erro-projeto-categoria"></small>
             </div>
 
-            <div class="sobre-texto">
-                <h2>
-                    Aprendendo, criando<br />
-                    e evoluindo.
-                </h2>
-
-                <p>
-                    Sou estudante de Engenharia de Software e estou desenvolvendo minha
-                    base em programação, desenvolvimento web e segurança da informação.
-                    Tenho curiosidade em entender como os sistemas funcionam — e como
-                    torná-los mais seguros.
-                </p>
-            </div>
-        </section>
-
-        <section class="secao" id="projetos">
-            <svg class="adesivo esconde-mobile" style="--t:56px; --r:-12deg; bottom:14px; left:3%;" aria-hidden="true"><use href="#coracao"/></svg>
-            <svg class="adesivo" style="--t:80px; --r:14deg; top:60px; right:4%;" aria-hidden="true"><use href="#coracao"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:56px; --r:-20deg; top:170px; right:20%;" aria-hidden="true"><use href="#pata"/></svg>
-
-            <div class="cabecalho-secao">
-                <p class="numero">02 / PROJETOS</p>
-
-                <h2>
-                    O que estou<br />
-                    construindo<span>.</span>
-                </h2>
+            <div class="field campo-largo">
+              <label for="projeto-tecnologias">Tecnologias (separe por vírgula) *</label>
+              <input id="projeto-tecnologias" name="tecnologias" type="text" maxlength="120" required placeholder="Ex.: HTML, CSS, JavaScript" />
+              <small class="ajuda">Essas tecnologias também serão usadas nos filtros.</small>
+              <small class="erro-msg" id="erro-projeto-tecnologias"></small>
             </div>
 
-            <div class="projetos">
-                <article class="projeto projeto-marinho">
-                    <p class="tipo">HTML · CSS · JAVASCRIPT</p>
-                    <h3>Site de uma banda</h3>
-                    <p>Uma página que iniciou minha trajetória em Front-End.</p>
-                    <a href="https://dontpad.com/CORTIS" target="_blank" rel="noopener noreferrer">Ver no DontPad ↗</a>
-                </article>
-
-                <article class="projeto projeto-indigo">
-                    <p class="tipo">JAVA · POO</p>
-                    <h3>Carrinho de compras</h3>
-                    <p>Exercício de Lógica de Programação com produtos e carrinho de compras.</p>
-                    <a href="https://github.com/MoaraLSouza/logica-de-programa-o/blob/main/Trabalho%20de%20encerramento" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
-                </article>
-
-                <article class="projeto projeto-lavanda">
-                    <p class="tipo">JAVA · INTERFACES</p>
-                    <h3>Contratos e parcelas</h3>
-                    <p>Projeto de estudo para praticar interfaces e cálculo de parcelas de um contrato.</p>
-                    <a href="https://github.com/MoaraLSouza/Contrato-e-parcelas/tree/main" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="secao habilidades" id="habilidades">
-            <svg class="adesivo esconde-mobile" style="--t:64px; --r:6deg; bottom:10px; left:8%;" aria-hidden="true"><use href="#gato2"/></svg>
-            <svg class="adesivo" style="--t:92px; --r:0deg; top:-82px; right:10%;" aria-hidden="true"><use href="#gato1"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:60px; --r:12deg; top:80px; right:6%;" aria-hidden="true"><use href="#brilho"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:70px; --r:-8deg; bottom:36px; right:22%;" aria-hidden="true"><use href="#espiral"/></svg>
-
-            <p class="numero">03 / HABILIDADES</p>
-
-            <h2>
-                Ferramentas que<br />
-                estou desenvolvendo.
-            </h2>
-
-            <div class="tags">
-                <span><i class="devicon-java-plain"></i> Java</span>
-                <span><i class="devicon-html5-plain"></i> HTML</span>
-                <span><i class="devicon-css3-plain"></i> CSS</span>
-                <span><i class="devicon-javascript-plain"></i> JavaScript</span>
-                <span><i class="devicon-python-plain"></i> Python</span>
-                <span><i class="devicon-figma-plain"></i> Figma</span>
-                <span><i class="devicon-linux-plain"></i> Linux</span>
-                <span><i class="devicon-github-original"></i> GitHub</span>
-            </div>
-        </section>
-
-        <section class="contato secao" id="contato">
-            <p class="numero">04 / CONTATO</p>
-
-            <svg class="adesivo esconde-mobile" style="--t:46px; --r:10deg; top:20px; left:4%;" aria-hidden="true"><use href="#pata"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:72px; --r:8deg; bottom:14px; left:3%;" aria-hidden="true"><use href="#gato1"/></svg>
-            <svg class="adesivo" style="--t:64px; --r:14deg; bottom:30px; right:6%;" aria-hidden="true"><use href="#coracao"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:84px; --r:-8deg; bottom:340px; right:18%;" aria-hidden="true"><use href="#gato2"/></svg>
-            <svg class="adesivo esconde-mobile" style="--t:54px; --r:12deg; bottom:650px; right:9%;" aria-hidden="true"><use href="#espiral"/></svg>
-
-            <div class="contato-grade">
-                <div class="contato-texto">
-                    <h2>Vamos conversar<span>?</span></h2>
-
-                    <p class="disponivel"><span class="ponto"></span> Aberta a estágio e novos projetos</p>
-
-                    <p>
-                        Estou aberta a oportunidades de estágio, aprendizado e projetos na
-                        área de tecnologia.
-                    </p>
-                </div>
-
-                <ul class="contato-lista">
-                    <li>
-                        <a href="mailto:moalsouza11@gmail.com">
-                            <span class="contato-icone">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <rect x="3" y="5" width="18" height="14" rx="1"/>
-                                    <path d="m3 7 9 6 9-6"/>
-                                </svg>
-                            </span>
-                            <span><strong>E-mail</strong><small>moalsouza11@gmail.com</small></span>
-                            <span class="contato-seta" aria-hidden="true">↗</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/moara-souza-1729ab3b6/" target="_blank" rel="noopener noreferrer">
-                            <span class="contato-icone"><i class="devicon-linkedin-plain"></i></span>
-                            <span><strong>LinkedIn</strong><small>Moara Souza</small></span>
-                            <span class="contato-seta" aria-hidden="true">↗</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/MoaraLSouza" target="_blank" rel="noopener noreferrer">
-                            <span class="contato-icone"><i class="devicon-github-original"></i></span>
-                            <span><strong>GitHub</strong><small>@MoaraLSouza</small></span>
-                            <span class="contato-seta" aria-hidden="true">↗</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="field campo-largo">
+              <label for="projeto-descricao">Descrição do projeto *</label>
+              <textarea id="projeto-descricao" name="descricao" rows="3" minlength="10" maxlength="240" required placeholder="Explique o objetivo, o problema abordado e sua contribuição."></textarea>
+              <small class="erro-msg" id="erro-projeto-descricao"></small>
             </div>
 
-            <div class="contato-form-area">
-                <h3>Envie uma mensagem!</h3>
-
-                <form id="form-contato" novalidate>
-                    <div class="field">
-                        <label for="nome-msg">Nome (3 a 80 caracteres)</label>
-                        <input type="text" id="nome-msg" name="nome" required minlength="3" maxlength="80" aria-describedby="erro-nome" placeholder="Digite seu nome..." />
-                        <span id="erro-nome" class="erro-msg" aria-live="polite"></span>
-                    </div>
-
-                    <div class="field">
-                        <label for="email-msg">E-mail</label>
-                        <input type="email" id="email-msg" name="email" required aria-describedby="erro-email" placeholder="seuemail@dominio.com" />
-                        <span id="erro-email" class="erro-msg" aria-live="polite"></span>
-                    </div>
-
-                    <div class="field">
-                        <label for="motivo-msg">Motivo do contato</label>
-                        <select id="motivo-msg" name="motivo" required aria-describedby="erro-motivo">
-                            <option value="">Selecione um motivo...</option>
-                            <option value="Oportunidade profissional">Oportunidade profissional</option>
-                            <option value="Projeto freelance">Projeto freelance</option>
-                            <option value="Outro">Outro</option>
-                        </select>
-                        <span id="erro-motivo" class="erro-msg" aria-live="polite"></span>
-                    </div>
-
-                    <div id="container-assunto" class="oculto field">
-                        <label for="assunto-msg">Assunto adicional (5 a 100 caracteres)</label>
-                        <input type="text" id="assunto-msg" name="assunto" minlength="5" maxlength="100" aria-describedby="erro-assunto" disabled placeholder="Especifique o assunto..." />
-                        <span id="erro-assunto" class="erro-msg" aria-live="polite"></span>
-                    </div>
-
-                    <div class="field">
-                        <label for="mensagem-msg">Mensagem (30 a 1000 caracteres)</label>
-                        <textarea id="mensagem-msg" name="mensagem" required minlength="30" maxlength="1000" aria-describedby="erro-mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
-                        <div class="contador-container">
-                            <small id="contador-msg">0/1000</small>
-                        </div>
-                        <span id="erro-mensagem" class="erro-msg" aria-live="polite"></span>
-                    </div>
-
-                    <p id="form-status" class="status-msg" role="status" aria-live="polite"></p>
-
-                    <button type="submit" id="btn-enviar-msg">Enviar mensagem</button>
-                </form>
+            <div class="field">
+              <label for="projeto-link">Link do projeto</label>
+              <input id="projeto-link" name="link" type="url" placeholder="https://github.com/..." maxlength="300" />
+              <small class="ajuda">Opcional. Use um endereço completo começando com https://</small>
+              <small class="erro-msg" id="erro-projeto-link"></small>
             </div>
-        </section>
-    </main>
 
-    <footer>© 2026 Moara Lima Souza · Feito com HTML e CSS.</footer>
-    <script src="./script.js"></script>
+            <div class="field">
+              <label for="projeto-imagem">Endereço da imagem (opcional)</label>
+              <input id="projeto-imagem" name="imagem" type="url" placeholder="https://..." maxlength="500" />
+              <small class="ajuda">Pode deixar vazio para usar um cartão ilustrado.</small>
+              <small class="erro-msg" id="erro-projeto-imagem"></small>
+            </div>
+          </div>
+
+          <div class="acoes-form-projeto">
+            <button class="botao" id="salvar-projeto" type="submit">Adicionar projeto</button>
+            <button class="botao-secundario" id="cancelar-edicao" type="button" hidden>Cancelar edição</button>
+          </div>
+          <p class="status-msg" id="status-projeto" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="aviso-persistencia">
+          <strong>Importante:</strong> os projetos ficam salvos somente neste navegador e neste dispositivo. As alterações feitas aqui não atualizam automaticamente o site publicado para outros visitantes. O acesso ao painel é protegido por uma senha simples no próprio código.
+        </div>
+      </section>
+    </section>
+
+    <section class="secao habilidades" id="habilidades" aria-labelledby="titulo-habilidades">
+      <svg class="adesivo habilidades-gato" aria-hidden="true"><use href="#gato2" /></svg>
+      <svg class="adesivo habilidades-brilho esconde-mobile" aria-hidden="true"><use href="#brilho" /></svg>
+
+      <p class="numero">03 / Habilidades</p>
+      <h2 id="titulo-habilidades">Ferramentas que<br />estou desenvolvendo.</h2>
+
+      <div class="tags">
+        <span><i class="devicon-java-plain" aria-hidden="true"></i>Java</span>
+        <span><i class="devicon-html5-plain" aria-hidden="true"></i>HTML</span>
+        <span><i class="devicon-css3-plain" aria-hidden="true"></i>CSS</span>
+        <span><i class="devicon-javascript-plain" aria-hidden="true"></i>JavaScript</span>
+        <span><i class="devicon-python-plain" aria-hidden="true"></i>Python</span>
+        <span><i class="devicon-figma-plain" aria-hidden="true"></i>Figma</span>
+        <span><i class="devicon-linux-plain" aria-hidden="true"></i>Linux</span>
+        <span><i class="devicon-github-original" aria-hidden="true"></i>GitHub</span>
+      </div>
+    </section>
+
+    <section class="contato secao" id="contato" aria-labelledby="titulo-contato">
+      <svg class="adesivo contato-pata esconde-mobile" aria-hidden="true"><use href="#pata" /></svg>
+      <svg class="adesivo contato-coracao" aria-hidden="true"><use href="#coracao" /></svg>
+
+      <p class="numero">04 / CONTATO</p>
+
+      <div class="contato-grade">
+        <div class="contato-texto">
+          <h2 id="titulo-contato">Vamos conversar<span>?</span></h2>
+          <p class="disponivel"><span class="ponto"></span>Aberta a estágio e novos projetos</p>
+          <p>Estou aberta a oportunidades de estágio, aprendizado e projetos na área de tecnologia.</p>
+        </div>
+
+        <ul class="contato-lista">
+          <li>
+            <a href="mailto:moalsouza11@gmail.com">
+              <span class="contato-icone" aria-hidden="true">✉</span>
+              <span><strong>E-mail</strong><small>moalsouza11@gmail.com</small></span>
+              <span class="contato-seta" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/moara-souza-1729ab3b6/" target="_blank" rel="noopener noreferrer">
+              <span class="contato-icone" aria-hidden="true"><i class="devicon-linkedin-plain"></i></span>
+              <span><strong>LinkedIn</strong><small>Moara Souza</small></span>
+              <span class="contato-seta" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/MoaraLSouza" target="_blank" rel="noopener noreferrer">
+              <span class="contato-icone" aria-hidden="true"><i class="devicon-github-original"></i></span>
+              <span><strong>GitHub</strong><small>@MoaraLSouza</small></span>
+              <span class="contato-seta" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contato-form-area">
+        <h3>Envie uma mensagem!</h3>
+        <p class="ajuda-form">Os campos marcados com * são obrigatórios.</p>
+
+        <form id="form-contato" novalidate>
+          <div class="field">
+            <label for="nome-msg">Nome (3 a 80 caracteres) *</label>
+            <input type="text" id="nome-msg" name="nome" required minlength="3" maxlength="80" autocomplete="name" aria-describedby="erro-nome" placeholder="Digite seu nome" />
+            <span id="erro-nome" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="email-msg">E-mail *</label>
+            <input type="email" id="email-msg" name="email" required autocomplete="email" aria-describedby="erro-email" placeholder="seuemail@dominio.com" />
+            <span id="erro-email" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="motivo-msg">Motivo do contato *</label>
+            <select id="motivo-msg" name="motivo" required aria-describedby="erro-motivo">
+              <option value="">Selecione um motivo...</option>
+              <option value="Oportunidade profissional">Oportunidade profissional</option>
+              <option value="Projeto freelance">Projeto freelance</option>
+              <option value="Outro">Outro</option>
+            </select>
+            <span id="erro-motivo" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div id="container-assunto" class="field oculto">
+            <label for="assunto-msg">Assunto adicional (5 a 100 caracteres) *</label>
+            <input type="text" id="assunto-msg" name="assunto" minlength="5" maxlength="100" disabled aria-describedby="erro-assunto" placeholder="Especifique o assunto" />
+            <span id="erro-assunto" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="mensagem-msg">Mensagem (30 a 1000 caracteres) *</label>
+            <textarea id="mensagem-msg" name="mensagem" required minlength="30" maxlength="1000" aria-describedby="erro-mensagem contador-msg" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <div class="contador-container">
+              <small id="contador-msg">0/1000</small>
+            </div>
+            <span id="erro-mensagem" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <p id="form-status" class="status-msg" role="status" aria-live="polite"></p>
+          <button type="submit" id="btn-enviar-msg">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <p>© <span id="ano-atual"></span> Moara Lima Souza · Todos os direitos reservados.</p>
+    <button type="button" class="acesso-admin" id="acesso-admin">Acesso administrativo</button>
+  </footer>
 </body>
 </html>
